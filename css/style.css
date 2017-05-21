@@ -1,0 +1,109 @@
+body{
+	font-family:Thoma;
+}
+
+#calendar{
+	width:100%;
+}
+
+#calendar{
+	color:#666;
+	text-decoration:none;
+}
+
+#calendar ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	clear:both;
+	width:100%;
+}
+
+#calendar li{
+	display:block;
+	float:left;
+	width:14.2857142857%;
+	padding:5px;
+	box-sizing:border-box;
+	border:1px solid navy;
+	margin-right:-1px;
+	margin-bottom:-1px;
+}
+
+#calendar ul.weakdays{
+	height:40px;
+	background:hotpink;
+}
+
+#calendar ul.weakdays li{
+	text-align:center;
+	text-transform:uppercase;
+	line-height:20px;
+	border:none !important;
+	padding:10px 6px;
+	color:Blue;
+	font-size:13px;
+}
+
+#calendar .days li{
+	height:180px;
+}
+
+#calendar .days li:hover{
+	background:grey;
+}
+
+#calendar .date{
+	text-align:center;
+	margin-bottom:5px;
+	padding:5px;
+	background:gray;
+	color:red;
+	width:25px;
+	border-radius:50%;
+	float:right;
+}
+
+#calendar .event{
+	clear:both;
+	display:block;
+	font-size:13px;
+	border-radius:4px;
+	padding:5px;
+	margin-top:40px;
+	margin-bottom:5px;
+	color:maroon;
+	line-height:14px;
+	background:gray;
+	border:1px solid sky-blue;
+	color:blue;
+	text-decoration:none;
+}
+
+#calendar .event-desc{
+	color:#ccc;
+	margin:3px 0 7px 0;
+	text-decoration:none;
+}
+
+#calendar .other-month{
+	background:pink;
+	color:#666;
+}
+
+@media(max-width:786px){
+	#calendar .weakdays;#calendar .other-month{
+		display:none;
+}
+	
+	#calendar li{
+		height:auto !important;
+		border:1px solid #ededed;
+		width:100%;
+		padding:10px;
+		margin-bottom:-1px;
+	}
+	
+	#calendar .date{
+		float:none;
+}
